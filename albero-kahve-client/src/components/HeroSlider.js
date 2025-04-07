@@ -43,16 +43,22 @@ const HeroSlider = () => {
     const fetchSlides = async () => {
       try {
         const response = await axios.get('/api/slider');
-        if (response.data && response.data.length > 0) {
+        
+        // HATALI veri varsa set etme
+        if (Array.isArray(response.data) && response.data.length > 0) {
           setSlides(response.data);
+        } else {
+          console.warn('Beklenen array formatı alınamadı. Gelen veri:', response.data);
         }
+  
       } catch (error) {
         console.error('Slider verilerini çekerken hata oluştu:', error);
       }
     };
-
+  
     fetchSlides();
   }, []);
+  
 
   // Slider ayarları
   const settings = {
