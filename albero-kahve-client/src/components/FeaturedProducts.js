@@ -10,19 +10,19 @@ const ProductPortfolio = () => {
   const products = [
     {
       id: 1,
-      frontImage: '/images/products/sos-arka.png',
+      frontImage: '/images/products/sos-arka2.png',
       backImage: '/images/products/sos.png',
       detailLink: '/sos'
     },
     {
       id: 2,
-      frontImage: '/images/products/surup-arka.png',
+      frontImage: '/images/products/surup-arka2.png',
       backImage: '/images/products/surup.png',
       detailLink: '/surup'
     },
     {
       id: 3,
-      frontImage: '/images/products/pure-arka.png',
+      frontImage: '/images/products/pure-arka2.png',
       backImage: '/images/products/pure.png',
       detailLink: '/pure'
     }
@@ -147,7 +147,7 @@ const ProductWrapper = styled.div`
 const ProductCard = styled.div`
   position: relative;
   width: 100%;
-  padding-top: 100%; // 1:1 aspect ratio
+  padding-top: 130%; // 1:1 aspect ratio
   margin-bottom: 1rem;
   overflow: hidden;
   border-radius: 8px;
@@ -176,7 +176,7 @@ const BackImage = styled.img`
 
 const NormalIconContainer = styled(motion.div)`
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;

@@ -15,7 +15,7 @@ const AboutSection = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <img src="/images/about/coffee-shop.jpg" alt="N1 Kahve" />
+            <img src="/images/about/n1logo.svg" alt="N1 Kahve" />
           </AboutImage>
           
           <AboutContent
